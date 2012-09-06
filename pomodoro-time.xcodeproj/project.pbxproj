@@ -1,0 +1,1389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10 /* MCMASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = F /* MCMASIDataDecompressor.m */; };
+		101 /* MCMApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 100 /* MCMApplicationDelegate.m */; };
+		104 /* MCMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 103 /* MCMViewController.m */; };
+		109 /* MCMNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 108 /* MCMNotificationManager.m */; };
+		10D /* MCMNotificationsAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C /* MCMNotificationsAdapter.m */; };
+		113 /* MCMNotificationUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 112 /* MCMNotificationUtils.m */; };
+		118 /* MCMStatsAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 117 /* MCMStatsAdapter.m */; };
+		11B /* MCMStatsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A /* MCMStatsManager.m */; };
+		121 /* MCMStatsLocatorService.m in Sources */ = {isa = PBXBuildFile; fileRef = 120 /* MCMStatsLocatorService.m */; };
+		124 /* MCMStatsSubBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 123 /* MCMStatsSubBeacon.m */; };
+		12C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B /* CFNetwork.framework */; };
+		12E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D /* SystemConfiguration.framework */; };
+		13 /* MCMASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 12 /* MCMASIDownloadCache.m */; };
+		130 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F /* MobileCoreServices.framework */; };
+		132 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131 /* QuartzCore.framework */; };
+		134 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 133 /* CoreTelephony.framework */; };
+		136 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 135 /* libz.1.1.3.dylib */; };
+		138 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137 /* CoreLocation.framework */; };
+		13A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139 /* AudioToolbox.framework */; };
+		13C /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B /* iAd.framework */; };
+		13E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D /* MessageUI.framework */; };
+		16 /* MCMASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 15 /* MCMASIFormDataRequest.m */; };
+		19 /* MCMASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18 /* MCMASIHTTPRequest.m */; };
+		1E /* MCMASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D /* MCMASIInputStream.m */; };
+		21 /* MCMASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 20 /* MCMASINetworkQueue.m */; };
+		26 /* MCMReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 25 /* MCMReachability.m */; };
+		29 /* MCMBase64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 28 /* MCMBase64Transcoder.c */; };
+		2C /* MCMhmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B /* MCMhmac.c */; };
+		2F /* MCMsha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 2E /* MCMsha1.c */; };
+		35 /* MCMNSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 34 /* MCMNSObject+SBJSON.m */; };
+		38 /* MCMNSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 37 /* MCMNSString+SBJSON.m */; };
+		380151B4149566E800AD8CCA /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 380151B3149566E800AD8CCA /* play.png */; };
+		3813BEB4149CF66900BA5EFD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3813BEB6149CF66900BA5EFD /* Localizable.strings */; };
+		3822D8C91497EA4700EA5D8B /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3822D8C81497EA4700EA5D8B /* Constants.m */; };
+		3825AB54148E9CF70066C837 /* OCPromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3825AB53148E9CF70066C837 /* OCPromptView.m */; };
+		383BE859148A936A00599EC0 /* add hover.png in Resources */ = {isa = PBXBuildFile; fileRef = 383BE855148A936A00599EC0 /* add hover.png */; };
+		383BE85A148A936A00599EC0 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 383BE856148A936A00599EC0 /* add.png */; };
+		383BE85B148A936A00599EC0 /* config hover.png in Resources */ = {isa = PBXBuildFile; fileRef = 383BE857148A936A00599EC0 /* config hover.png */; };
+		383BE85C148A936A00599EC0 /* config.png in Resources */ = {isa = PBXBuildFile; fileRef = 383BE858148A936A00599EC0 /* config.png */; };
+		3842A6FB14B6797B0097947C /* NSTexturedFullScreenBackgroundColor.png in Resources */ = {isa = PBXBuildFile; fileRef = 3842A6FA14B6797B0097947C /* NSTexturedFullScreenBackgroundColor.png */; };
+		388CE84F148A358D008E40E8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 388CE84D148A358D008E40E8 /* Default.png */; };
+		388CE855148A35E2008E40E8 /* Fondo-inferior.png in Resources */ = {isa = PBXBuildFile; fileRef = 388CE851148A35E2008E40E8 /* Fondo-inferior.png */; };
+		388CE856148A35E2008E40E8 /* Fondo-superior.png in Resources */ = {isa = PBXBuildFile; fileRef = 388CE852148A35E2008E40E8 /* Fondo-superior.png */; };
+		388CE85A148A3601008E40E8 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 388CE859148A3601008E40E8 /* Icon.png */; };
+		388E9A5314B63B9C007329F0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 388E9A5214B63B9C007329F0 /* AVFoundation.framework */; };
+		388E9A5514B66A5D007329F0 /* Pomodoro Finished.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 388E9A5414B66A5D007329F0 /* Pomodoro Finished.mp3 */; };
+		389F1DD9149C28C1001EFB32 /* disableTaskTable.png in Resources */ = {isa = PBXBuildFile; fileRef = 389F1DD8149C28C1001EFB32 /* disableTaskTable.png */; };
+		38BEE7A5148EA90800645E76 /* DAOutil.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BEE7A4148EA90800645E76 /* DAOutil.m */; };
+		38BEE7A8148EAE3000645E76 /* TaskDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BEE7A7148EAE3000645E76 /* TaskDAO.m */; };
+		38BEE7AB148EAE3A00645E76 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BEE7AA148EAE3A00645E76 /* Task.m */; };
+		38BEE7B2148EB49D00645E76 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BEE7AD148EB49D00645E76 /* FMDatabase.m */; };
+		38BEE7B3148EB49D00645E76 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BEE7AF148EB49D00645E76 /* FMDatabaseAdditions.m */; };
+		38BEE7B4148EB49D00645E76 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BEE7B1148EB49D00645E76 /* FMResultSet.m */; };
+		38BEE7B7148EB53E00645E76 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BEE7B6148EB53E00645E76 /* libsqlite3.dylib */; };
+		38C0BCEF1486BB130011B2A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C0BCEE1486BB130011B2A6 /* UIKit.framework */; };
+		38C0BCF11486BB130011B2A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C0BCF01486BB130011B2A6 /* Foundation.framework */; };
+		38C0BCF31486BB130011B2A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C0BCF21486BB130011B2A6 /* CoreGraphics.framework */; };
+		38C0BCF91486BB130011B2A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38C0BCF71486BB130011B2A6 /* InfoPlist.strings */; };
+		38C0BCFB1486BB130011B2A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C0BCFA1486BB130011B2A6 /* main.m */; };
+		38C0BCFF1486BB130011B2A6 /* pomodoro_timeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C0BCFE1486BB130011B2A6 /* pomodoro_timeAppDelegate.m */; };
+		38C0BD021486BB130011B2A6 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38C0BD001486BB130011B2A6 /* MainWindow.xib */; };
+		38C0BD051486BB130011B2A6 /* pomodoro_timeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C0BD041486BB130011B2A6 /* pomodoro_timeViewController.m */; };
+		38C0BD081486BB130011B2A6 /* pomodoro_timeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38C0BD061486BB130011B2A6 /* pomodoro_timeViewController.xib */; };
+		38E8DEC8149186E900426A2B /* pomodoro-time.db in Resources */ = {isa = PBXBuildFile; fileRef = 38E8DEC7149186E900426A2B /* pomodoro-time.db */; };
+		38FFFFDE149CD818004A79EA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 38FFFFDD149CD818004A79EA /* Settings.bundle */; };
+		3B /* MCMSBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A /* MCMSBJSON.m */; };
+		3E /* MCMSBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D /* MCMSBJsonBase.m */; };
+		4 /* ChangeLog.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3 /* ChangeLog.rtf */; };
+		41 /* MCMSBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 40 /* MCMSBJsonParser.m */; };
+		44 /* MCMSBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 43 /* MCMSBJsonWriter.m */; };
+		48 /* Body.m in Sources */ = {isa = PBXBuildFile; fileRef = 47 /* Body.m */; };
+		4B /* Head.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A /* Head.m */; };
+		4E /* OPML.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D /* OPML.m */; };
+		51 /* OPML20ParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50 /* OPML20ParserDelegate.m */; };
+		54 /* OPMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 53 /* OPMLReader.m */; };
+		57 /* Outline.m in Sources */ = {isa = PBXBuildFile; fileRef = 56 /* Outline.m */; };
+		5C /* MCMCDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B /* MCMCDataScanner_Extensions.m */; };
+		5F /* MCMNSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E /* MCMNSCharacterSet_Extensions.m */; };
+		62 /* MCMNSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 61 /* MCMNSDictionary_JSONExtensions.m */; };
+		65 /* MCMNSScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 64 /* MCMNSScanner_Extensions.m */; };
+		68 /* MCJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 67 /* MCJSONSerializer.m */; };
+		6B /* MCMCJSONDataSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A /* MCMCJSONDataSerializer.m */; };
+		6E /* MCMCJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D /* MCMCJSONDeserializer.m */; };
+		71 /* MCMCJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 70 /* MCMCJSONScanner.m */; };
+		75 /* MCMCSerializedJSONData.m in Sources */ = {isa = PBXBuildFile; fileRef = 74 /* MCMCSerializedJSONData.m */; };
+		78 /* MCMCDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 77 /* MCMCDataScanner.m */; };
+		82 /* AdWhirlAdapterIAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 81 /* AdWhirlAdapterIAd.m */; };
+		89 /* AdWhirlAdapterCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 88 /* AdWhirlAdapterCustom.m */; };
+		8C /* AdWhirlAdapterEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B /* AdWhirlAdapterEvent.m */; };
+		8F /* AdWhirlAdapterGeneric.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E /* AdWhirlAdapterGeneric.m */; };
+		9 /* MCMASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8 /* MCMASIAuthenticationDialog.m */; };
+		92 /* AdWhirlAdNetworkAdapter+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 91 /* AdWhirlAdNetworkAdapter+Helpers.m */; };
+		94 /* AdWhirlAdNetworkAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 93 /* AdWhirlAdNetworkAdapter.m */; };
+		97 /* AdWhirlAdNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 96 /* AdWhirlAdNetworkConfig.m */; };
+		9A /* AdWhirlAdNetworkRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 99 /* AdWhirlAdNetworkRegistry.m */; };
+		9D /* AdWhirlClassWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C /* AdWhirlClassWrapper.m */; };
+		A0 /* AdWhirlConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F /* AdWhirlConfig.m */; };
+		A3 /* AdWhirlConfigStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A2 /* AdWhirlConfigStore.m */; };
+		A6 /* AdWhirlCustomAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5 /* AdWhirlCustomAdView.m */; };
+		A9 /* AdWhirlError.m in Sources */ = {isa = PBXBuildFile; fileRef = A8 /* AdWhirlError.m */; };
+		AC /* AdWhirlLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AB /* AdWhirlLog.m */; };
+		AF /* AdWhirlView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE /* AdWhirlView.m */; };
+		B1 /* AdWhirlWebBrowser.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0 /* AdWhirlWebBrowser.xib */; };
+		B4 /* AdWhirlWebBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3 /* AdWhirlWebBrowserController.m */; };
+		B6 /* ARRollerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5 /* ARRollerView.m */; };
+		BA /* AWNetworkReachabilityWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B9 /* AWNetworkReachabilityWrapper.m */; };
+		BD /* UIColor+AdWhirlConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = BC /* UIColor+AdWhirlConfig.m */; };
+		C2 /* Changelog.txt in Resources */ = {isa = PBXBuildFile; fileRef = C1 /* Changelog.txt */; };
+		C4 /* README in Resources */ = {isa = PBXBuildFile; fileRef = C3 /* README */; };
+		C9 /* MCMAdAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C8 /* MCMAdAdapter.m */; };
+		CC /* MCMAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB /* MCMAdManager.m */; };
+		D /* MCMASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = C /* MCMASIDataCompressor.m */; };
+		D4 /* UITabBarController+MCMConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D3 /* UITabBarController+MCMConfig.m */; };
+		D6 /* MCMConfig-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5 /* MCMConfig-Info.plist */; };
+		DA /* MCMConfigAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D9 /* MCMConfigAdapter.m */; };
+		DE /* MCMConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD /* MCMConfigManager.m */; };
+		E1 /* MCMConfigSectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E0 /* MCMConfigSectionManager.m */; };
+		E7 /* MCMConfigSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6 /* MCMConfigSplashViewController.m */; };
+		EA /* MCMCore-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9 /* MCMCore-Info.plist */; };
+		EE /* MCMCoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED /* MCMCoreManager.m */; };
+		F1 /* MCMModuleAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = F0 /* MCMModuleAdapter.m */; };
+		F5 /* MCMCoreAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F4 /* MCMCoreAPIRequest.m */; };
+		FA /* MCMCoreUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F9 /* MCMCoreUtils.m */; };
+		FD /* MCMCoreWebAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC /* MCMCoreWebAlertView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		100 /* MCMApplicationDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMApplicationDelegate.m; sourceTree = "<group>"; };
+		102 /* MCMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMViewController.h; sourceTree = "<group>"; };
+		103 /* MCMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMViewController.m; sourceTree = "<group>"; };
+		105 /* MCMLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMLib.h; sourceTree = "<group>"; };
+		107 /* MCMNotificationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMNotificationManager.h; sourceTree = "<group>"; };
+		108 /* MCMNotificationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMNotificationManager.m; sourceTree = "<group>"; };
+		10A /* MCMNotifications.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMNotifications.h; sourceTree = "<group>"; };
+		10B /* MCMNotificationsAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMNotificationsAdapter.h; sourceTree = "<group>"; };
+		10C /* MCMNotificationsAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMNotificationsAdapter.m; sourceTree = "<group>"; };
+		10E /* MCMNotificationsApplicationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMNotificationsApplicationDelegate.h; sourceTree = "<group>"; };
+		11 /* MCMASIDownloadCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMASIDownloadCache.h; sourceTree = "<group>"; };
+		110 /* MCMNotificationsDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMNotificationsDefines.h; sourceTree = "<group>"; };
+		111 /* MCMNotificationUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMNotificationUtils.h; sourceTree = "<group>"; };
+		112 /* MCMNotificationUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMNotificationUtils.m; sourceTree = "<group>"; };
+		115 /* MCMStats.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMStats.h; sourceTree = "<group>"; };
+		116 /* MCMStatsAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMStatsAdapter.h; sourceTree = "<group>"; };
+		117 /* MCMStatsAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMStatsAdapter.m; sourceTree = "<group>"; };
+		119 /* MCMStatsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMStatsManager.h; sourceTree = "<group>"; };
+		11A /* MCMStatsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMStatsManager.m; sourceTree = "<group>"; };
+		11E /* MCMStatsDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMStatsDefines.h; sourceTree = "<group>"; };
+		11F /* MCMStatsLocatorService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMStatsLocatorService.h; sourceTree = "<group>"; };
+		12 /* MCMASIDownloadCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMASIDownloadCache.m; sourceTree = "<group>"; };
+		120 /* MCMStatsLocatorService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMStatsLocatorService.m; sourceTree = "<group>"; };
+		122 /* MCMStatsSubBeacon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMStatsSubBeacon.h; sourceTree = "<group>"; };
+		123 /* MCMStatsSubBeacon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMStatsSubBeacon.m; sourceTree = "<group>"; };
+		12B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		12D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		12F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		131 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		133 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		135 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		137 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		139 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		13B /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		13D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		14 /* MCMASIFormDataRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMASIFormDataRequest.h; sourceTree = "<group>"; };
+		15 /* MCMASIFormDataRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMASIFormDataRequest.m; sourceTree = "<group>"; };
+		17 /* MCMASIHTTPRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMASIHTTPRequest.h; sourceTree = "<group>"; };
+		18 /* MCMASIHTTPRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMASIHTTPRequest.m; sourceTree = "<group>"; };
+		1A /* MCMASIHTTPRequestConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		1B /* MCMASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		1C /* MCMASIInputStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMASIInputStream.h; sourceTree = "<group>"; };
+		1D /* MCMASIInputStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMASIInputStream.m; sourceTree = "<group>"; };
+		1F /* MCMASINetworkQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMASINetworkQueue.h; sourceTree = "<group>"; };
+		20 /* MCMASINetworkQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMASINetworkQueue.m; sourceTree = "<group>"; };
+		22 /* MCMASIProgressDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMASIProgressDelegate.h; sourceTree = "<group>"; };
+		24 /* MCMReachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMReachability.h; sourceTree = "<group>"; };
+		25 /* MCMReachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMReachability.m; sourceTree = "<group>"; };
+		28 /* MCMBase64Transcoder.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MCMBase64Transcoder.c; sourceTree = "<group>"; };
+		2A /* MCMBase64Transcoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMBase64Transcoder.h; sourceTree = "<group>"; };
+		2B /* MCMhmac.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MCMhmac.c; sourceTree = "<group>"; };
+		2D /* MCMhmac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMhmac.h; sourceTree = "<group>"; };
+		2E /* MCMsha1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MCMsha1.c; sourceTree = "<group>"; };
+		3 /* ChangeLog.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ChangeLog.rtf; sourceTree = "<group>"; };
+		30 /* MCMsha1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMsha1.h; sourceTree = "<group>"; };
+		32 /* MCMJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMJSON.h; sourceTree = "<group>"; };
+		33 /* MCMNSObject+SBJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MCMNSObject+SBJSON.h"; sourceTree = "<group>"; };
+		34 /* MCMNSObject+SBJSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MCMNSObject+SBJSON.m"; sourceTree = "<group>"; };
+		36 /* MCMNSString+SBJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MCMNSString+SBJSON.h"; sourceTree = "<group>"; };
+		37 /* MCMNSString+SBJSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MCMNSString+SBJSON.m"; sourceTree = "<group>"; };
+		380151B3149566E800AD8CCA /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		3813BEB5149CF66900BA5EFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3822D8C71497EA4700EA5D8B /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		3822D8C81497EA4700EA5D8B /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		3825AB52148E9CF70066C837 /* OCPromptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCPromptView.h; sourceTree = "<group>"; };
+		3825AB53148E9CF70066C837 /* OCPromptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCPromptView.m; sourceTree = "<group>"; };
+		383BE855148A936A00599EC0 /* add hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add hover.png"; sourceTree = "<group>"; };
+		383BE856148A936A00599EC0 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		383BE857148A936A00599EC0 /* config hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "config hover.png"; sourceTree = "<group>"; };
+		383BE858148A936A00599EC0 /* config.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = config.png; sourceTree = "<group>"; };
+		3842A6FA14B6797B0097947C /* NSTexturedFullScreenBackgroundColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NSTexturedFullScreenBackgroundColor.png; sourceTree = "<group>"; };
+		387C2C70153F24B900EFB569 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = "/Users/Alvaro/Xcode/pomodoro-time/pomodoro-time/es.lproj/pomodoro_timeViewController.xib"; sourceTree = "<absolute>"; };
+		387C2C71153F24B900EFB569 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = "/Users/Alvaro/Xcode/pomodoro-time/pomodoro-time/es.lproj/MainWindow.xib"; sourceTree = "<absolute>"; };
+		387C2C72153F24B900EFB569 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = "/Users/Alvaro/Xcode/pomodoro-time/pomodoro-time/es.lproj/Localizable.strings"; sourceTree = "<absolute>"; };
+		387C2C73153F24B900EFB569 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = "/Users/Alvaro/Xcode/pomodoro-time/pomodoro-time/es.lproj/InfoPlist.strings"; sourceTree = "<absolute>"; };
+		387C2C74153F24DF00EFB569 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = "/Users/Alvaro/Xcode/pomodoro-time/pomodoro-time/fr.lproj/pomodoro_timeViewController.xib"; sourceTree = "<absolute>"; };
+		387C2C75153F24DF00EFB569 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = "/Users/Alvaro/Xcode/pomodoro-time/pomodoro-time/fr.lproj/MainWindow.xib"; sourceTree = "<absolute>"; };
+		387C2C76153F24DF00EFB569 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = "/Users/Alvaro/Xcode/pomodoro-time/pomodoro-time/fr.lproj/Localizable.strings"; sourceTree = "<absolute>"; };
+		387C2C77153F24DF00EFB569 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = "/Users/Alvaro/Xcode/pomodoro-time/pomodoro-time/fr.lproj/InfoPlist.strings"; sourceTree = "<absolute>"; };
+		387C2C78153F24F500EFB569 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = "/Users/Alvaro/Xcode/pomodoro-time/pomodoro-time/de.lproj/pomodoro_timeViewController.xib"; sourceTree = "<absolute>"; };
+		387C2C79153F24F500EFB569 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = "/Users/Alvaro/Xcode/pomodoro-time/pomodoro-time/de.lproj/MainWindow.xib"; sourceTree = "<absolute>"; };
+		387C2C7A153F24F500EFB569 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = "/Users/Alvaro/Xcode/pomodoro-time/pomodoro-time/de.lproj/Localizable.strings"; sourceTree = "<absolute>"; };
+		387C2C7B153F24F500EFB569 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = "/Users/Alvaro/Xcode/pomodoro-time/pomodoro-time/de.lproj/InfoPlist.strings"; sourceTree = "<absolute>"; };
+		387C2C7C153F24FF00EFB569 /* pt */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = pt; path = "/Users/Alvaro/Xcode/pomodoro-time/pomodoro-time/pt.lproj/pomodoro_timeViewController.xib"; sourceTree = "<absolute>"; };
+		387C2C7D153F24FF00EFB569 /* pt */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = pt; path = "/Users/Alvaro/Xcode/pomodoro-time/pomodoro-time/pt.lproj/MainWindow.xib"; sourceTree = "<absolute>"; };
+		387C2C7E153F24FF00EFB569 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = "/Users/Alvaro/Xcode/pomodoro-time/pomodoro-time/pt.lproj/Localizable.strings"; sourceTree = "<absolute>"; };
+		387C2C7F153F24FF00EFB569 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = "/Users/Alvaro/Xcode/pomodoro-time/pomodoro-time/pt.lproj/InfoPlist.strings"; sourceTree = "<absolute>"; };
+		388CE84D148A358D008E40E8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "pomodoro-time/Default.png"; sourceTree = "<group>"; };
+		388CE851148A35E2008E40E8 /* Fondo-inferior.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fondo-inferior.png"; sourceTree = "<group>"; };
+		388CE852148A35E2008E40E8 /* Fondo-superior.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fondo-superior.png"; sourceTree = "<group>"; };
+		388CE859148A3601008E40E8 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		388E9A5214B63B9C007329F0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		388E9A5414B66A5D007329F0 /* Pomodoro Finished.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Pomodoro Finished.mp3"; sourceTree = "<group>"; };
+		389F1DD8149C28C1001EFB32 /* disableTaskTable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disableTaskTable.png; sourceTree = "<group>"; };
+		38BEE7A3148EA90800645E76 /* DAOutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAOutil.h; sourceTree = "<group>"; };
+		38BEE7A4148EA90800645E76 /* DAOutil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAOutil.m; sourceTree = "<group>"; };
+		38BEE7A6148EAE3000645E76 /* TaskDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskDAO.h; sourceTree = "<group>"; };
+		38BEE7A7148EAE3000645E76 /* TaskDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskDAO.m; sourceTree = "<group>"; };
+		38BEE7A9148EAE3A00645E76 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		38BEE7AA148EAE3A00645E76 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		38BEE7AC148EB49D00645E76 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		38BEE7AD148EB49D00645E76 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		38BEE7AE148EB49D00645E76 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		38BEE7AF148EB49D00645E76 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		38BEE7B0148EB49D00645E76 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		38BEE7B1148EB49D00645E76 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		38BEE7B6148EB53E00645E76 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		38C0BCEA1486BB130011B2A6 /* Pomodoro Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pomodoro Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38C0BCEE1486BB130011B2A6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		38C0BCF01486BB130011B2A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		38C0BCF21486BB130011B2A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		38C0BCF61486BB130011B2A6 /* pomodoro-time-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pomodoro-time-Info.plist"; sourceTree = "<group>"; };
+		38C0BCF81486BB130011B2A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		38C0BCFA1486BB130011B2A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		38C0BCFC1486BB130011B2A6 /* pomodoro-time-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pomodoro-time-Prefix.pch"; sourceTree = "<group>"; };
+		38C0BCFD1486BB130011B2A6 /* pomodoro_timeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pomodoro_timeAppDelegate.h; sourceTree = "<group>"; };
+		38C0BCFE1486BB130011B2A6 /* pomodoro_timeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pomodoro_timeAppDelegate.m; sourceTree = "<group>"; };
+		38C0BD011486BB130011B2A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		38C0BD031486BB130011B2A6 /* pomodoro_timeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pomodoro_timeViewController.h; sourceTree = "<group>"; };
+		38C0BD041486BB130011B2A6 /* pomodoro_timeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pomodoro_timeViewController.m; sourceTree = "<group>"; };
+		38C0BD071486BB130011B2A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/pomodoro_timeViewController.xib; sourceTree = "<group>"; };
+		38E8DEC7149186E900426A2B /* pomodoro-time.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pomodoro-time.db"; sourceTree = "<group>"; };
+		38FFFFDD149CD818004A79EA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		39 /* MCMSBJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMSBJSON.h; sourceTree = "<group>"; };
+		3A /* MCMSBJSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMSBJSON.m; sourceTree = "<group>"; };
+		3C /* MCMSBJsonBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMSBJsonBase.h; sourceTree = "<group>"; };
+		3D /* MCMSBJsonBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMSBJsonBase.m; sourceTree = "<group>"; };
+		3F /* MCMSBJsonParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMSBJsonParser.h; sourceTree = "<group>"; };
+		40 /* MCMSBJsonParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMSBJsonParser.m; sourceTree = "<group>"; };
+		42 /* MCMSBJsonWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMSBJsonWriter.h; sourceTree = "<group>"; };
+		43 /* MCMSBJsonWriter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMSBJsonWriter.m; sourceTree = "<group>"; };
+		46 /* Body.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Body.h; sourceTree = "<group>"; };
+		47 /* Body.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Body.m; sourceTree = "<group>"; };
+		49 /* Head.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Head.h; sourceTree = "<group>"; };
+		4A /* Head.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Head.m; sourceTree = "<group>"; };
+		4C /* OPML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OPML.h; sourceTree = "<group>"; };
+		4D /* OPML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OPML.m; sourceTree = "<group>"; };
+		4F /* OPML20ParserDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OPML20ParserDelegate.h; sourceTree = "<group>"; };
+		50 /* OPML20ParserDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OPML20ParserDelegate.m; sourceTree = "<group>"; };
+		52 /* OPMLReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OPMLReader.h; sourceTree = "<group>"; };
+		53 /* OPMLReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OPMLReader.m; sourceTree = "<group>"; };
+		55 /* Outline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Outline.h; sourceTree = "<group>"; };
+		56 /* Outline.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Outline.m; sourceTree = "<group>"; };
+		5A /* MCMCDataScanner_Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMCDataScanner_Extensions.h; sourceTree = "<group>"; };
+		5B /* MCMCDataScanner_Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMCDataScanner_Extensions.m; sourceTree = "<group>"; };
+		5D /* MCMNSCharacterSet_Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMNSCharacterSet_Extensions.h; sourceTree = "<group>"; };
+		5E /* MCMNSCharacterSet_Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMNSCharacterSet_Extensions.m; sourceTree = "<group>"; };
+		60 /* MCMNSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMNSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
+		61 /* MCMNSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMNSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
+		63 /* MCMNSScanner_Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMNSScanner_Extensions.h; sourceTree = "<group>"; };
+		64 /* MCMNSScanner_Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMNSScanner_Extensions.m; sourceTree = "<group>"; };
+		67 /* MCJSONSerializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCJSONSerializer.m; sourceTree = "<group>"; };
+		69 /* MCMCJSONDataSerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMCJSONDataSerializer.h; sourceTree = "<group>"; };
+		6A /* MCMCJSONDataSerializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMCJSONDataSerializer.m; sourceTree = "<group>"; };
+		6C /* MCMCJSONDeserializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMCJSONDeserializer.h; sourceTree = "<group>"; };
+		6D /* MCMCJSONDeserializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMCJSONDeserializer.m; sourceTree = "<group>"; };
+		6F /* MCMCJSONScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMCJSONScanner.h; sourceTree = "<group>"; };
+		7 /* MCMASIAuthenticationDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		70 /* MCMCJSONScanner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMCJSONScanner.m; sourceTree = "<group>"; };
+		72 /* MCMCJSONSerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMCJSONSerializer.h; sourceTree = "<group>"; };
+		73 /* MCMCSerializedJSONData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMCSerializedJSONData.h; sourceTree = "<group>"; };
+		74 /* MCMCSerializedJSONData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMCSerializedJSONData.m; sourceTree = "<group>"; };
+		76 /* MCMCDataScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMCDataScanner.h; sourceTree = "<group>"; };
+		77 /* MCMCDataScanner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMCDataScanner.m; sourceTree = "<group>"; };
+		8 /* MCMASIAuthenticationDialog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		80 /* AdWhirlAdapterIAd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdWhirlAdapterIAd.h; sourceTree = "<group>"; };
+		81 /* AdWhirlAdapterIAd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdWhirlAdapterIAd.m; sourceTree = "<group>"; };
+		83 /* AdWhirlAdNetworkAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdWhirlAdNetworkAdapter.h; sourceTree = "<group>"; };
+		84 /* AdWhirlDelegateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdWhirlDelegateProtocol.h; sourceTree = "<group>"; };
+		85 /* AdWhirlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdWhirlView.h; sourceTree = "<group>"; };
+		87 /* AdWhirlAdapterCustom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdWhirlAdapterCustom.h; sourceTree = "<group>"; };
+		88 /* AdWhirlAdapterCustom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdWhirlAdapterCustom.m; sourceTree = "<group>"; };
+		8A /* AdWhirlAdapterEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdWhirlAdapterEvent.h; sourceTree = "<group>"; };
+		8B /* AdWhirlAdapterEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdWhirlAdapterEvent.m; sourceTree = "<group>"; };
+		8D /* AdWhirlAdapterGeneric.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdWhirlAdapterGeneric.h; sourceTree = "<group>"; };
+		8E /* AdWhirlAdapterGeneric.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdWhirlAdapterGeneric.m; sourceTree = "<group>"; };
+		90 /* AdWhirlAdNetworkAdapter+Helpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdWhirlAdNetworkAdapter+Helpers.h"; sourceTree = "<group>"; };
+		91 /* AdWhirlAdNetworkAdapter+Helpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AdWhirlAdNetworkAdapter+Helpers.m"; sourceTree = "<group>"; };
+		93 /* AdWhirlAdNetworkAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdWhirlAdNetworkAdapter.m; sourceTree = "<group>"; };
+		95 /* AdWhirlAdNetworkConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdWhirlAdNetworkConfig.h; sourceTree = "<group>"; };
+		96 /* AdWhirlAdNetworkConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdWhirlAdNetworkConfig.m; sourceTree = "<group>"; };
+		98 /* AdWhirlAdNetworkRegistry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdWhirlAdNetworkRegistry.h; sourceTree = "<group>"; };
+		99 /* AdWhirlAdNetworkRegistry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdWhirlAdNetworkRegistry.m; sourceTree = "<group>"; };
+		9B /* AdWhirlClassWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdWhirlClassWrapper.h; sourceTree = "<group>"; };
+		9C /* AdWhirlClassWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdWhirlClassWrapper.m; sourceTree = "<group>"; };
+		9E /* AdWhirlConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdWhirlConfig.h; sourceTree = "<group>"; };
+		9F /* AdWhirlConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdWhirlConfig.m; sourceTree = "<group>"; };
+		A /* MCMASICacheDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMASICacheDelegate.h; sourceTree = "<group>"; };
+		A1 /* AdWhirlConfigStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdWhirlConfigStore.h; sourceTree = "<group>"; };
+		A2 /* AdWhirlConfigStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdWhirlConfigStore.m; sourceTree = "<group>"; };
+		A4 /* AdWhirlCustomAdView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdWhirlCustomAdView.h; sourceTree = "<group>"; };
+		A5 /* AdWhirlCustomAdView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdWhirlCustomAdView.m; sourceTree = "<group>"; };
+		A7 /* AdWhirlError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdWhirlError.h; sourceTree = "<group>"; };
+		A8 /* AdWhirlError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdWhirlError.m; sourceTree = "<group>"; };
+		AA /* AdWhirlLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdWhirlLog.h; sourceTree = "<group>"; };
+		AB /* AdWhirlLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdWhirlLog.m; sourceTree = "<group>"; };
+		AD /* AdWhirlView+.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdWhirlView+.h"; sourceTree = "<group>"; };
+		AE /* AdWhirlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdWhirlView.m; sourceTree = "<group>"; };
+		B /* MCMASIDataCompressor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMASIDataCompressor.h; sourceTree = "<group>"; };
+		B0 /* AdWhirlWebBrowser.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdWhirlWebBrowser.xib; sourceTree = "<group>"; };
+		B2 /* AdWhirlWebBrowserController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdWhirlWebBrowserController.h; sourceTree = "<group>"; };
+		B3 /* AdWhirlWebBrowserController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdWhirlWebBrowserController.m; sourceTree = "<group>"; };
+		B5 /* ARRollerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARRollerView.m; sourceTree = "<group>"; };
+		B7 /* AWNetworkReachabilityDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWNetworkReachabilityDelegate.h; sourceTree = "<group>"; };
+		B8 /* AWNetworkReachabilityWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWNetworkReachabilityWrapper.h; sourceTree = "<group>"; };
+		B9 /* AWNetworkReachabilityWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWNetworkReachabilityWrapper.m; sourceTree = "<group>"; };
+		BB /* UIColor+AdWhirlConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+AdWhirlConfig.h"; sourceTree = "<group>"; };
+		BC /* UIColor+AdWhirlConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AdWhirlConfig.m"; sourceTree = "<group>"; };
+		BF /* ARRollerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARRollerProtocol.h; sourceTree = "<group>"; };
+		C /* MCMASIDataCompressor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMASIDataCompressor.m; sourceTree = "<group>"; };
+		C0 /* ARRollerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARRollerView.h; sourceTree = "<group>"; };
+		C1 /* Changelog.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Changelog.txt; sourceTree = "<group>"; };
+		C3 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		C6 /* MCMAd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMAd.h; sourceTree = "<group>"; };
+		C7 /* MCMAdAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMAdAdapter.h; sourceTree = "<group>"; };
+		C8 /* MCMAdAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMAdAdapter.m; sourceTree = "<group>"; };
+		CA /* MCMAdManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMAdManager.h; sourceTree = "<group>"; };
+		CB /* MCMAdManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMAdManager.m; sourceTree = "<group>"; };
+		CD /* MCMAdViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMAdViewControllerDelegate.h; sourceTree = "<group>"; };
+		CF /* MCMAdDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMAdDefines.h; sourceTree = "<group>"; };
+		D2 /* UITabBarController+MCMConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+MCMConfig.h"; sourceTree = "<group>"; };
+		D3 /* UITabBarController+MCMConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+MCMConfig.m"; sourceTree = "<group>"; };
+		D5 /* MCMConfig-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MCMConfig-Info.plist"; sourceTree = "<group>"; };
+		D7 /* MCMConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMConfig.h; sourceTree = "<group>"; };
+		D8 /* MCMConfigAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMConfigAdapter.h; sourceTree = "<group>"; };
+		D9 /* MCMConfigAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMConfigAdapter.m; sourceTree = "<group>"; };
+		DB /* MCMConfigApplicationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMConfigApplicationDelegate.h; sourceTree = "<group>"; };
+		DC /* MCMConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMConfigManager.h; sourceTree = "<group>"; };
+		DD /* MCMConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMConfigManager.m; sourceTree = "<group>"; };
+		DF /* MCMConfigSectionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMConfigSectionManager.h; sourceTree = "<group>"; };
+		E /* MCMASIDataDecompressor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMASIDataDecompressor.h; sourceTree = "<group>"; };
+		E0 /* MCMConfigSectionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMConfigSectionManager.m; sourceTree = "<group>"; };
+		E3 /* MCMConfigDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMConfigDefines.h; sourceTree = "<group>"; };
+		E5 /* MCMConfigSplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMConfigSplashViewController.h; sourceTree = "<group>"; };
+		E6 /* MCMConfigSplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMConfigSplashViewController.m; sourceTree = "<group>"; };
+		E9 /* MCMCore-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MCMCore-Info.plist"; sourceTree = "<group>"; };
+		EB /* MCMCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMCore.h; sourceTree = "<group>"; };
+		EC /* MCMCoreManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMCoreManager.h; sourceTree = "<group>"; };
+		ED /* MCMCoreManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMCoreManager.m; sourceTree = "<group>"; };
+		EF /* MCMModuleAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMModuleAdapter.h; sourceTree = "<group>"; };
+		F /* MCMASIDataDecompressor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMASIDataDecompressor.m; sourceTree = "<group>"; };
+		F0 /* MCMModuleAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMModuleAdapter.m; sourceTree = "<group>"; };
+		F3 /* MCMCoreAPIRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMCoreAPIRequest.h; sourceTree = "<group>"; };
+		F4 /* MCMCoreAPIRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMCoreAPIRequest.m; sourceTree = "<group>"; };
+		F6 /* MCMCoreDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMCoreDefines.h; sourceTree = "<group>"; };
+		F7 /* MCMCoreSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMCoreSingleton.h; sourceTree = "<group>"; };
+		F8 /* MCMCoreUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMCoreUtils.h; sourceTree = "<group>"; };
+		F9 /* MCMCoreUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMCoreUtils.m; sourceTree = "<group>"; };
+		FB /* MCMCoreWebAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMCoreWebAlertView.h; sourceTree = "<group>"; };
+		FC /* MCMCoreWebAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMCoreWebAlertView.m; sourceTree = "<group>"; };
+		FF /* MCMApplicationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMApplicationDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38C0BCE71486BB130011B2A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38BEE7B7148EB53E00645E76 /* libsqlite3.dylib in Frameworks */,
+				388E9A5314B63B9C007329F0 /* AVFoundation.framework in Frameworks */,
+				38C0BCEF1486BB130011B2A6 /* UIKit.framework in Frameworks */,
+				38C0BCF11486BB130011B2A6 /* Foundation.framework in Frameworks */,
+				38C0BCF31486BB130011B2A6 /* CoreGraphics.framework in Frameworks */,
+				12C /* CFNetwork.framework in Frameworks */,
+				12E /* SystemConfiguration.framework in Frameworks */,
+				130 /* MobileCoreServices.framework in Frameworks */,
+				132 /* QuartzCore.framework in Frameworks */,
+				134 /* CoreTelephony.framework in Frameworks */,
+				136 /* libz.1.1.3.dylib in Frameworks */,
+				138 /* CoreLocation.framework in Frameworks */,
+				13A /* AudioToolbox.framework in Frameworks */,
+				13C /* iAd.framework in Frameworks */,
+				13E /* MessageUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1 /* MCMLib-r793 */ = {
+			isa = PBXGroup;
+			children = (
+				2 /* lib */,
+				12B /* CFNetwork.framework */,
+				12D /* SystemConfiguration.framework */,
+				12F /* MobileCoreServices.framework */,
+				131 /* QuartzCore.framework */,
+				133 /* CoreTelephony.framework */,
+				135 /* libz.1.1.3.dylib */,
+				137 /* CoreLocation.framework */,
+				139 /* AudioToolbox.framework */,
+				13B /* iAd.framework */,
+				13D /* MessageUI.framework */,
+			);
+			path = "MCMLib-r793";
+			sourceTree = "<group>";
+		};
+		106 /* MCMNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				107 /* MCMNotificationManager.h */,
+				108 /* MCMNotificationManager.m */,
+				10A /* MCMNotifications.h */,
+				10B /* MCMNotificationsAdapter.h */,
+				10C /* MCMNotificationsAdapter.m */,
+				10E /* MCMNotificationsApplicationDelegate.h */,
+				10F /* private */,
+			);
+			path = MCMNotifications;
+			sourceTree = "<group>";
+		};
+		10F /* private */ = {
+			isa = PBXGroup;
+			children = (
+				110 /* MCMNotificationsDefines.h */,
+				111 /* MCMNotificationUtils.h */,
+				112 /* MCMNotificationUtils.m */,
+			);
+			path = private;
+			sourceTree = "<group>";
+		};
+		114 /* MCMStats */ = {
+			isa = PBXGroup;
+			children = (
+				115 /* MCMStats.h */,
+				116 /* MCMStatsAdapter.h */,
+				117 /* MCMStatsAdapter.m */,
+				119 /* MCMStatsManager.h */,
+				11A /* MCMStatsManager.m */,
+				11C /* private */,
+			);
+			path = MCMStats;
+			sourceTree = "<group>";
+		};
+		11C /* private */ = {
+			isa = PBXGroup;
+			children = (
+				11D /* Crypto */,
+				11E /* MCMStatsDefines.h */,
+				11F /* MCMStatsLocatorService.h */,
+				120 /* MCMStatsLocatorService.m */,
+				122 /* MCMStatsSubBeacon.h */,
+				123 /* MCMStatsSubBeacon.m */,
+			);
+			path = private;
+			sourceTree = "<group>";
+		};
+		11D /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		2 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				3 /* ChangeLog.rtf */,
+				5 /* External */,
+				79 /* MCMLib */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		23 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				24 /* MCMReachability.h */,
+				25 /* MCMReachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		27 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				28 /* MCMBase64Transcoder.c */,
+				2A /* MCMBase64Transcoder.h */,
+				2B /* MCMhmac.c */,
+				2D /* MCMhmac.h */,
+				2E /* MCMsha1.c */,
+				30 /* MCMsha1.h */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		31 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				32 /* MCMJSON.h */,
+				33 /* MCMNSObject+SBJSON.h */,
+				34 /* MCMNSObject+SBJSON.m */,
+				36 /* MCMNSString+SBJSON.h */,
+				37 /* MCMNSString+SBJSON.m */,
+				39 /* MCMSBJSON.h */,
+				3A /* MCMSBJSON.m */,
+				3C /* MCMSBJsonBase.h */,
+				3D /* MCMSBJsonBase.m */,
+				3F /* MCMSBJsonParser.h */,
+				40 /* MCMSBJsonParser.m */,
+				42 /* MCMSBJsonWriter.h */,
+				43 /* MCMSBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		3822D8C61497EA2400EA5D8B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3822D8C71497EA4700EA5D8B /* Constants.h */,
+				3822D8C81497EA4700EA5D8B /* Constants.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		3822D8CA1497F10600EA5D8B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				38FFFFDD149CD818004A79EA /* Settings.bundle */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		3825AB51148E9CDA0066C837 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				3825AB52148E9CF70066C837 /* OCPromptView.h */,
+				3825AB53148E9CF70066C837 /* OCPromptView.m */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		388CE84B148A356D008E40E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3813BEB6149CF66900BA5EFD /* Localizable.strings */,
+				383BE855148A936A00599EC0 /* add hover.png */,
+				383BE856148A936A00599EC0 /* add.png */,
+				383BE857148A936A00599EC0 /* config hover.png */,
+				383BE858148A936A00599EC0 /* config.png */,
+				389F1DD8149C28C1001EFB32 /* disableTaskTable.png */,
+				388CE851148A35E2008E40E8 /* Fondo-inferior.png */,
+				388CE852148A35E2008E40E8 /* Fondo-superior.png */,
+				3842A6FA14B6797B0097947C /* NSTexturedFullScreenBackgroundColor.png */,
+				380151B3149566E800AD8CCA /* play.png */,
+				388E9A5414B66A5D007329F0 /* Pomodoro Finished.mp3 */,
+				38E8DEC7149186E900426A2B /* pomodoro-time.db */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		38BEE79B148EA4B300645E76 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				38BEE7B6148EB53E00645E76 /* libsqlite3.dylib */,
+				38BEE7B5148EB52200645E76 /* FMDB */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		38BEE79E148EA74C00645E76 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				38C0BD001486BB130011B2A6 /* MainWindow.xib */,
+				38C0BD061486BB130011B2A6 /* pomodoro_timeViewController.xib */,
+				38BEE79F148EA75200645E76 /* Controller */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		38BEE79F148EA75200645E76 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				38C0BD031486BB130011B2A6 /* pomodoro_timeViewController.h */,
+				38C0BD041486BB130011B2A6 /* pomodoro_timeViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		38BEE7A0148EA78100645E76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				38BEE7A3148EA90800645E76 /* DAOutil.h */,
+				38BEE7A4148EA90800645E76 /* DAOutil.m */,
+				38BEE7A2148EA79E00645E76 /* DAO */,
+				38BEE7A1148EA79700645E76 /* Domain */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		38BEE7A1148EA79700645E76 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				38BEE7A9148EAE3A00645E76 /* Task.h */,
+				38BEE7AA148EAE3A00645E76 /* Task.m */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		38BEE7A2148EA79E00645E76 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				38BEE7A6148EAE3000645E76 /* TaskDAO.h */,
+				38BEE7A7148EAE3000645E76 /* TaskDAO.m */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
+		38BEE7B5148EB52200645E76 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				38BEE7AC148EB49D00645E76 /* FMDatabase.h */,
+				38BEE7AD148EB49D00645E76 /* FMDatabase.m */,
+				38BEE7AE148EB49D00645E76 /* FMDatabaseAdditions.h */,
+				38BEE7AF148EB49D00645E76 /* FMDatabaseAdditions.m */,
+				38BEE7B0148EB49D00645E76 /* FMResultSet.h */,
+				38BEE7B1148EB49D00645E76 /* FMResultSet.m */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
+		38C0BCDF1486BB130011B2A6 = {
+			isa = PBXGroup;
+			children = (
+				388CE859148A3601008E40E8 /* Icon.png */,
+				388CE84D148A358D008E40E8 /* Default.png */,
+				38C0BCF41486BB130011B2A6 /* pomodoro-time */,
+				38C0BCED1486BB130011B2A6 /* Frameworks */,
+				38C0BCEB1486BB130011B2A6 /* Products */,
+				1 /* MCMLib-r793 */,
+			);
+			sourceTree = "<group>";
+		};
+		38C0BCEB1486BB130011B2A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38C0BCEA1486BB130011B2A6 /* Pomodoro Time.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38C0BCED1486BB130011B2A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				388E9A5214B63B9C007329F0 /* AVFoundation.framework */,
+				38C0BCEE1486BB130011B2A6 /* UIKit.framework */,
+				38C0BCF01486BB130011B2A6 /* Foundation.framework */,
+				38C0BCF21486BB130011B2A6 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38C0BCF41486BB130011B2A6 /* pomodoro-time */ = {
+			isa = PBXGroup;
+			children = (
+				38C0BCFD1486BB130011B2A6 /* pomodoro_timeAppDelegate.h */,
+				38C0BCFE1486BB130011B2A6 /* pomodoro_timeAppDelegate.m */,
+				3825AB51148E9CDA0066C837 /* Custom */,
+				38BEE79B148EA4B300645E76 /* Library */,
+				38BEE7A0148EA78100645E76 /* Model */,
+				3822D8CA1497F10600EA5D8B /* Settings */,
+				3822D8C61497EA2400EA5D8B /* Util */,
+				38BEE79E148EA74C00645E76 /* View */,
+				388CE84B148A356D008E40E8 /* Resources */,
+				38C0BCF51486BB130011B2A6 /* Supporting Files */,
+			);
+			path = "pomodoro-time";
+			sourceTree = "<group>";
+		};
+		38C0BCF51486BB130011B2A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				38C0BCF61486BB130011B2A6 /* pomodoro-time-Info.plist */,
+				38C0BCF71486BB130011B2A6 /* InfoPlist.strings */,
+				38C0BCFA1486BB130011B2A6 /* main.m */,
+				38C0BCFC1486BB130011B2A6 /* pomodoro-time-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45 /* OPML */ = {
+			isa = PBXGroup;
+			children = (
+				46 /* Body.h */,
+				47 /* Body.m */,
+				49 /* Head.h */,
+				4A /* Head.m */,
+				4C /* OPML.h */,
+				4D /* OPML.m */,
+				4F /* OPML20ParserDelegate.h */,
+				50 /* OPML20ParserDelegate.m */,
+				52 /* OPMLReader.h */,
+				53 /* OPMLReader.m */,
+				55 /* Outline.h */,
+				56 /* Outline.m */,
+			);
+			path = OPML;
+			sourceTree = "<group>";
+		};
+		5 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				6 /* ASIHTTPRequest-1.8.1 */,
+				27 /* Crypto */,
+				31 /* JSON */,
+				45 /* OPML */,
+				58 /* TouchJSON */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		58 /* TouchJSON */ = {
+			isa = PBXGroup;
+			children = (
+				59 /* Extensions */,
+				66 /* JSON */,
+				76 /* MCMCDataScanner.h */,
+				77 /* MCMCDataScanner.m */,
+			);
+			path = TouchJSON;
+			sourceTree = "<group>";
+		};
+		59 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5A /* MCMCDataScanner_Extensions.h */,
+				5B /* MCMCDataScanner_Extensions.m */,
+				5D /* MCMNSCharacterSet_Extensions.h */,
+				5E /* MCMNSCharacterSet_Extensions.m */,
+				60 /* MCMNSDictionary_JSONExtensions.h */,
+				61 /* MCMNSDictionary_JSONExtensions.m */,
+				63 /* MCMNSScanner_Extensions.h */,
+				64 /* MCMNSScanner_Extensions.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6 /* ASIHTTPRequest-1.8.1 */ = {
+			isa = PBXGroup;
+			children = (
+				7 /* MCMASIAuthenticationDialog.h */,
+				8 /* MCMASIAuthenticationDialog.m */,
+				A /* MCMASICacheDelegate.h */,
+				B /* MCMASIDataCompressor.h */,
+				C /* MCMASIDataCompressor.m */,
+				E /* MCMASIDataDecompressor.h */,
+				F /* MCMASIDataDecompressor.m */,
+				11 /* MCMASIDownloadCache.h */,
+				12 /* MCMASIDownloadCache.m */,
+				14 /* MCMASIFormDataRequest.h */,
+				15 /* MCMASIFormDataRequest.m */,
+				17 /* MCMASIHTTPRequest.h */,
+				18 /* MCMASIHTTPRequest.m */,
+				1A /* MCMASIHTTPRequestConfig.h */,
+				1B /* MCMASIHTTPRequestDelegate.h */,
+				1C /* MCMASIInputStream.h */,
+				1D /* MCMASIInputStream.m */,
+				1F /* MCMASINetworkQueue.h */,
+				20 /* MCMASINetworkQueue.m */,
+				22 /* MCMASIProgressDelegate.h */,
+				23 /* Reachability */,
+			);
+			path = "ASIHTTPRequest-1.8.1";
+			sourceTree = "<group>";
+		};
+		66 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				67 /* MCJSONSerializer.m */,
+				69 /* MCMCJSONDataSerializer.h */,
+				6A /* MCMCJSONDataSerializer.m */,
+				6C /* MCMCJSONDeserializer.h */,
+				6D /* MCMCJSONDeserializer.m */,
+				6F /* MCMCJSONScanner.h */,
+				70 /* MCMCJSONScanner.m */,
+				72 /* MCMCJSONSerializer.h */,
+				73 /* MCMCSerializedJSONData.h */,
+				74 /* MCMCSerializedJSONData.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		79 /* MCMLib */ = {
+			isa = PBXGroup;
+			children = (
+				7A /* src */,
+			);
+			path = MCMLib;
+			sourceTree = "<group>";
+		};
+		7A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				7B /* MCMAd */,
+				D0 /* MCMConfig */,
+				E8 /* MCMCore */,
+				105 /* MCMLib.h */,
+				106 /* MCMNotifications */,
+				114 /* MCMStats */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		7B /* MCMAd */ = {
+			isa = PBXGroup;
+			children = (
+				7C /* External */,
+				C6 /* MCMAd.h */,
+				C7 /* MCMAdAdapter.h */,
+				C8 /* MCMAdAdapter.m */,
+				CA /* MCMAdManager.h */,
+				CB /* MCMAdManager.m */,
+				CD /* MCMAdViewControllerDelegate.h */,
+				CE /* private */,
+			);
+			path = MCMAd;
+			sourceTree = "<group>";
+		};
+		7C /* External */ = {
+			isa = PBXGroup;
+			children = (
+				7D /* AdWhirlSDK_iPhone_3.0.0-Custom */,
+				C5 /* GoogleAdMobAdsSDK */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		7D /* AdWhirlSDK_iPhone_3.0.0-Custom */ = {
+			isa = PBXGroup;
+			children = (
+				7E /* AdWhirl */,
+				C1 /* Changelog.txt */,
+				C3 /* README */,
+			);
+			path = "AdWhirlSDK_iPhone_3.0.0-Custom";
+			sourceTree = "<group>";
+		};
+		7E /* AdWhirl */ = {
+			isa = PBXGroup;
+			children = (
+				7F /* adapters */,
+				84 /* AdWhirlDelegateProtocol.h */,
+				85 /* AdWhirlView.h */,
+				86 /* internal */,
+				BE /* legacy */,
+			);
+			path = AdWhirl;
+			sourceTree = "<group>";
+		};
+		7F /* adapters */ = {
+			isa = PBXGroup;
+			children = (
+				80 /* AdWhirlAdapterIAd.h */,
+				81 /* AdWhirlAdapterIAd.m */,
+				83 /* AdWhirlAdNetworkAdapter.h */,
+			);
+			path = adapters;
+			sourceTree = "<group>";
+		};
+		86 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				87 /* AdWhirlAdapterCustom.h */,
+				88 /* AdWhirlAdapterCustom.m */,
+				8A /* AdWhirlAdapterEvent.h */,
+				8B /* AdWhirlAdapterEvent.m */,
+				8D /* AdWhirlAdapterGeneric.h */,
+				8E /* AdWhirlAdapterGeneric.m */,
+				90 /* AdWhirlAdNetworkAdapter+Helpers.h */,
+				91 /* AdWhirlAdNetworkAdapter+Helpers.m */,
+				93 /* AdWhirlAdNetworkAdapter.m */,
+				95 /* AdWhirlAdNetworkConfig.h */,
+				96 /* AdWhirlAdNetworkConfig.m */,
+				98 /* AdWhirlAdNetworkRegistry.h */,
+				99 /* AdWhirlAdNetworkRegistry.m */,
+				9B /* AdWhirlClassWrapper.h */,
+				9C /* AdWhirlClassWrapper.m */,
+				9E /* AdWhirlConfig.h */,
+				9F /* AdWhirlConfig.m */,
+				A1 /* AdWhirlConfigStore.h */,
+				A2 /* AdWhirlConfigStore.m */,
+				A4 /* AdWhirlCustomAdView.h */,
+				A5 /* AdWhirlCustomAdView.m */,
+				A7 /* AdWhirlError.h */,
+				A8 /* AdWhirlError.m */,
+				AA /* AdWhirlLog.h */,
+				AB /* AdWhirlLog.m */,
+				AD /* AdWhirlView+.h */,
+				AE /* AdWhirlView.m */,
+				B0 /* AdWhirlWebBrowser.xib */,
+				B2 /* AdWhirlWebBrowserController.h */,
+				B3 /* AdWhirlWebBrowserController.m */,
+				B5 /* ARRollerView.m */,
+				B7 /* AWNetworkReachabilityDelegate.h */,
+				B8 /* AWNetworkReachabilityWrapper.h */,
+				B9 /* AWNetworkReachabilityWrapper.m */,
+				BB /* UIColor+AdWhirlConfig.h */,
+				BC /* UIColor+AdWhirlConfig.m */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		BE /* legacy */ = {
+			isa = PBXGroup;
+			children = (
+				BF /* ARRollerProtocol.h */,
+				C0 /* ARRollerView.h */,
+			);
+			path = legacy;
+			sourceTree = "<group>";
+		};
+		C5 /* GoogleAdMobAdsSDK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GoogleAdMobAdsSDK;
+			sourceTree = "<group>";
+		};
+		CE /* private */ = {
+			isa = PBXGroup;
+			children = (
+				CF /* MCMAdDefines.h */,
+			);
+			path = private;
+			sourceTree = "<group>";
+		};
+		D0 /* MCMConfig */ = {
+			isa = PBXGroup;
+			children = (
+				D1 /* categories */,
+				D5 /* MCMConfig-Info.plist */,
+				D7 /* MCMConfig.h */,
+				D8 /* MCMConfigAdapter.h */,
+				D9 /* MCMConfigAdapter.m */,
+				DB /* MCMConfigApplicationDelegate.h */,
+				DC /* MCMConfigManager.h */,
+				DD /* MCMConfigManager.m */,
+				DF /* MCMConfigSectionManager.h */,
+				E0 /* MCMConfigSectionManager.m */,
+				E2 /* private */,
+				E4 /* widgets */,
+			);
+			path = MCMConfig;
+			sourceTree = "<group>";
+		};
+		D1 /* categories */ = {
+			isa = PBXGroup;
+			children = (
+				D2 /* UITabBarController+MCMConfig.h */,
+				D3 /* UITabBarController+MCMConfig.m */,
+			);
+			path = categories;
+			sourceTree = "<group>";
+		};
+		E2 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				E3 /* MCMConfigDefines.h */,
+			);
+			path = private;
+			sourceTree = "<group>";
+		};
+		E4 /* widgets */ = {
+			isa = PBXGroup;
+			children = (
+				E5 /* MCMConfigSplashViewController.h */,
+				E6 /* MCMConfigSplashViewController.m */,
+			);
+			path = widgets;
+			sourceTree = "<group>";
+		};
+		E8 /* MCMCore */ = {
+			isa = PBXGroup;
+			children = (
+				E9 /* MCMCore-Info.plist */,
+				EB /* MCMCore.h */,
+				EC /* MCMCoreManager.h */,
+				ED /* MCMCoreManager.m */,
+				EF /* MCMModuleAdapter.h */,
+				F0 /* MCMModuleAdapter.m */,
+				F2 /* private */,
+				FE /* widgets */,
+			);
+			path = MCMCore;
+			sourceTree = "<group>";
+		};
+		F2 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				F3 /* MCMCoreAPIRequest.h */,
+				F4 /* MCMCoreAPIRequest.m */,
+				F6 /* MCMCoreDefines.h */,
+				F7 /* MCMCoreSingleton.h */,
+				F8 /* MCMCoreUtils.h */,
+				F9 /* MCMCoreUtils.m */,
+				FB /* MCMCoreWebAlertView.h */,
+				FC /* MCMCoreWebAlertView.m */,
+			);
+			path = private;
+			sourceTree = "<group>";
+		};
+		FE /* widgets */ = {
+			isa = PBXGroup;
+			children = (
+				FF /* MCMApplicationDelegate.h */,
+				100 /* MCMApplicationDelegate.m */,
+				102 /* MCMViewController.h */,
+				103 /* MCMViewController.m */,
+			);
+			path = widgets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38C0BCE91486BB130011B2A6 /* Pomodoro Time */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38C0BD0B1486BB130011B2A6 /* Build configuration list for PBXNativeTarget "Pomodoro Time" */;
+			buildPhases = (
+				38C0BCE61486BB130011B2A6 /* Sources */,
+				38C0BCE71486BB130011B2A6 /* Frameworks */,
+				38C0BCE81486BB130011B2A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pomodoro Time";
+			productName = "pomodoro-time";
+			productReference = 38C0BCEA1486BB130011B2A6 /* Pomodoro Time.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38C0BCE11486BB130011B2A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 38C0BCE41486BB130011B2A6 /* Build configuration list for PBXProject "pomodoro-time" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				es,
+				fr,
+				de,
+				pt,
+			);
+			mainGroup = 38C0BCDF1486BB130011B2A6;
+			productRefGroup = 38C0BCEB1486BB130011B2A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38C0BCE91486BB130011B2A6 /* Pomodoro Time */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38C0BCE81486BB130011B2A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38C0BCF91486BB130011B2A6 /* InfoPlist.strings in Resources */,
+				38C0BD021486BB130011B2A6 /* MainWindow.xib in Resources */,
+				38C0BD081486BB130011B2A6 /* pomodoro_timeViewController.xib in Resources */,
+				388CE84F148A358D008E40E8 /* Default.png in Resources */,
+				388CE855148A35E2008E40E8 /* Fondo-inferior.png in Resources */,
+				388CE856148A35E2008E40E8 /* Fondo-superior.png in Resources */,
+				388CE85A148A3601008E40E8 /* Icon.png in Resources */,
+				383BE859148A936A00599EC0 /* add hover.png in Resources */,
+				383BE85A148A936A00599EC0 /* add.png in Resources */,
+				383BE85B148A936A00599EC0 /* config hover.png in Resources */,
+				383BE85C148A936A00599EC0 /* config.png in Resources */,
+				38E8DEC8149186E900426A2B /* pomodoro-time.db in Resources */,
+				380151B4149566E800AD8CCA /* play.png in Resources */,
+				389F1DD9149C28C1001EFB32 /* disableTaskTable.png in Resources */,
+				38FFFFDE149CD818004A79EA /* Settings.bundle in Resources */,
+				3813BEB4149CF66900BA5EFD /* Localizable.strings in Resources */,
+				388E9A5514B66A5D007329F0 /* Pomodoro Finished.mp3 in Resources */,
+				3842A6FB14B6797B0097947C /* NSTexturedFullScreenBackgroundColor.png in Resources */,
+				4 /* ChangeLog.rtf in Resources */,
+				B1 /* AdWhirlWebBrowser.xib in Resources */,
+				C2 /* Changelog.txt in Resources */,
+				C4 /* README in Resources */,
+				D6 /* MCMConfig-Info.plist in Resources */,
+				EA /* MCMCore-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38C0BCE61486BB130011B2A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38C0BCFB1486BB130011B2A6 /* main.m in Sources */,
+				38C0BCFF1486BB130011B2A6 /* pomodoro_timeAppDelegate.m in Sources */,
+				38C0BD051486BB130011B2A6 /* pomodoro_timeViewController.m in Sources */,
+				3825AB54148E9CF70066C837 /* OCPromptView.m in Sources */,
+				38BEE7A5148EA90800645E76 /* DAOutil.m in Sources */,
+				38BEE7A8148EAE3000645E76 /* TaskDAO.m in Sources */,
+				38BEE7AB148EAE3A00645E76 /* Task.m in Sources */,
+				38BEE7B2148EB49D00645E76 /* FMDatabase.m in Sources */,
+				38BEE7B3148EB49D00645E76 /* FMDatabaseAdditions.m in Sources */,
+				38BEE7B4148EB49D00645E76 /* FMResultSet.m in Sources */,
+				3822D8C91497EA4700EA5D8B /* Constants.m in Sources */,
+				9 /* MCMASIAuthenticationDialog.m in Sources */,
+				D /* MCMASIDataCompressor.m in Sources */,
+				10 /* MCMASIDataDecompressor.m in Sources */,
+				13 /* MCMASIDownloadCache.m in Sources */,
+				16 /* MCMASIFormDataRequest.m in Sources */,
+				19 /* MCMASIHTTPRequest.m in Sources */,
+				1E /* MCMASIInputStream.m in Sources */,
+				21 /* MCMASINetworkQueue.m in Sources */,
+				26 /* MCMReachability.m in Sources */,
+				29 /* MCMBase64Transcoder.c in Sources */,
+				2C /* MCMhmac.c in Sources */,
+				2F /* MCMsha1.c in Sources */,
+				35 /* MCMNSObject+SBJSON.m in Sources */,
+				38 /* MCMNSString+SBJSON.m in Sources */,
+				3B /* MCMSBJSON.m in Sources */,
+				3E /* MCMSBJsonBase.m in Sources */,
+				41 /* MCMSBJsonParser.m in Sources */,
+				44 /* MCMSBJsonWriter.m in Sources */,
+				48 /* Body.m in Sources */,
+				4B /* Head.m in Sources */,
+				4E /* OPML.m in Sources */,
+				51 /* OPML20ParserDelegate.m in Sources */,
+				54 /* OPMLReader.m in Sources */,
+				57 /* Outline.m in Sources */,
+				5C /* MCMCDataScanner_Extensions.m in Sources */,
+				5F /* MCMNSCharacterSet_Extensions.m in Sources */,
+				62 /* MCMNSDictionary_JSONExtensions.m in Sources */,
+				65 /* MCMNSScanner_Extensions.m in Sources */,
+				68 /* MCJSONSerializer.m in Sources */,
+				6B /* MCMCJSONDataSerializer.m in Sources */,
+				6E /* MCMCJSONDeserializer.m in Sources */,
+				71 /* MCMCJSONScanner.m in Sources */,
+				75 /* MCMCSerializedJSONData.m in Sources */,
+				78 /* MCMCDataScanner.m in Sources */,
+				82 /* AdWhirlAdapterIAd.m in Sources */,
+				89 /* AdWhirlAdapterCustom.m in Sources */,
+				8C /* AdWhirlAdapterEvent.m in Sources */,
+				8F /* AdWhirlAdapterGeneric.m in Sources */,
+				92 /* AdWhirlAdNetworkAdapter+Helpers.m in Sources */,
+				94 /* AdWhirlAdNetworkAdapter.m in Sources */,
+				97 /* AdWhirlAdNetworkConfig.m in Sources */,
+				9A /* AdWhirlAdNetworkRegistry.m in Sources */,
+				9D /* AdWhirlClassWrapper.m in Sources */,
+				A0 /* AdWhirlConfig.m in Sources */,
+				A3 /* AdWhirlConfigStore.m in Sources */,
+				A6 /* AdWhirlCustomAdView.m in Sources */,
+				A9 /* AdWhirlError.m in Sources */,
+				AC /* AdWhirlLog.m in Sources */,
+				AF /* AdWhirlView.m in Sources */,
+				B4 /* AdWhirlWebBrowserController.m in Sources */,
+				B6 /* ARRollerView.m in Sources */,
+				BA /* AWNetworkReachabilityWrapper.m in Sources */,
+				BD /* UIColor+AdWhirlConfig.m in Sources */,
+				C9 /* MCMAdAdapter.m in Sources */,
+				CC /* MCMAdManager.m in Sources */,
+				D4 /* UITabBarController+MCMConfig.m in Sources */,
+				DA /* MCMConfigAdapter.m in Sources */,
+				DE /* MCMConfigManager.m in Sources */,
+				E1 /* MCMConfigSectionManager.m in Sources */,
+				E7 /* MCMConfigSplashViewController.m in Sources */,
+				EE /* MCMCoreManager.m in Sources */,
+				F1 /* MCMModuleAdapter.m in Sources */,
+				F5 /* MCMCoreAPIRequest.m in Sources */,
+				FA /* MCMCoreUtils.m in Sources */,
+				FD /* MCMCoreWebAlertView.m in Sources */,
+				101 /* MCMApplicationDelegate.m in Sources */,
+				104 /* MCMViewController.m in Sources */,
+				109 /* MCMNotificationManager.m in Sources */,
+				10D /* MCMNotificationsAdapter.m in Sources */,
+				113 /* MCMNotificationUtils.m in Sources */,
+				118 /* MCMStatsAdapter.m in Sources */,
+				11B /* MCMStatsManager.m in Sources */,
+				121 /* MCMStatsLocatorService.m in Sources */,
+				124 /* MCMStatsSubBeacon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3813BEB6149CF66900BA5EFD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3813BEB5149CF66900BA5EFD /* en */,
+				387C2C72153F24B900EFB569 /* es */,
+				387C2C76153F24DF00EFB569 /* fr */,
+				387C2C7A153F24F500EFB569 /* de */,
+				387C2C7E153F24FF00EFB569 /* pt */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		38C0BCF71486BB130011B2A6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38C0BCF81486BB130011B2A6 /* en */,
+				387C2C73153F24B900EFB569 /* es */,
+				387C2C77153F24DF00EFB569 /* fr */,
+				387C2C7B153F24F500EFB569 /* de */,
+				387C2C7F153F24FF00EFB569 /* pt */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		38C0BD001486BB130011B2A6 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38C0BD011486BB130011B2A6 /* en */,
+				387C2C71153F24B900EFB569 /* es */,
+				387C2C75153F24DF00EFB569 /* fr */,
+				387C2C79153F24F500EFB569 /* de */,
+				387C2C7D153F24FF00EFB569 /* pt */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		38C0BD061486BB130011B2A6 /* pomodoro_timeViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38C0BD071486BB130011B2A6 /* en */,
+				387C2C70153F24B900EFB569 /* es */,
+				387C2C74153F24DF00EFB569 /* fr */,
+				387C2C78153F24F500EFB569 /* de */,
+				387C2C7C153F24FF00EFB569 /* pt */,
+			);
+			name = pomodoro_timeViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		38C0BD091486BB130011B2A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		38C0BD0A1486BB130011B2A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		38C0BD0C1486BB130011B2A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pomodoro-time/pomodoro-time-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "pomodoro-time/pomodoro-time-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads\"",
+					"\"$(SRCROOT)/pomodoro-time\"",
+				);
+				OTHER_CFLAGS = "-DDISTRIBUTION=0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		38C0BD0D1486BB130011B2A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pomodoro-time/pomodoro-time-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "pomodoro-time/pomodoro-time-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads\"",
+					"\"$(SRCROOT)/pomodoro-time\"",
+				);
+				OTHER_CFLAGS = "-DDISTRIBUTION=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38C0BCE41486BB130011B2A6 /* Build configuration list for PBXProject "pomodoro-time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38C0BD091486BB130011B2A6 /* Debug */,
+				38C0BD0A1486BB130011B2A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38C0BD0B1486BB130011B2A6 /* Build configuration list for PBXNativeTarget "Pomodoro Time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38C0BD0C1486BB130011B2A6 /* Debug */,
+				38C0BD0D1486BB130011B2A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38C0BCE11486BB130011B2A6 /* Project object */;
+}
